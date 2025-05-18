@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -49,7 +49,7 @@ export const gitHash = process.env.VENCORD_HASH || execSync("git rev-parse --sho
 
 export const banner = {
     js: `
-// Vencord ${gitHash}
+// Scorncord ${gitHash}
 // Standalone: ${IS_STANDALONE}
 // Platform: ${IS_STANDALONE === false ? process.platform : "Universal"}
 // Updater Disabled: ${IS_UPDATER_DISABLED}
@@ -129,7 +129,7 @@ export const makeAllPackagesExternalPlugin = {
 };
 
 /**
- * @type {(kind: "web" | "discordDesktop" | "vesktop") => import("esbuild").Plugin}
+ * @type {(kind: "web" | "discordDesktop" | "vesktop"| "scorntop") => import("esbuild").Plugin}
  */
 export const globPlugins = kind => ({
     name: "glob-plugins",
@@ -169,7 +169,8 @@ export const globPlugins = kind => ({
                             (target === "desktop" && kind === "web") ||
                             (target === "discordDesktop" && kind !== "discordDesktop") ||
                             (target === "vesktop" && kind !== "vesktop");
-
+                            (target === "scorntop" && kind !== "scorntop");
+                        
                         if (excluded) {
                             const name = await resolvePluginName(fullDir, file);
                             excludedCode += `${JSON.stringify(name)}:${JSON.stringify(target)},\n`;
