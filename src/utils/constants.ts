@@ -39,13 +39,13 @@ export interface Dev {
  * If you are fine with attribution but don't want the badge, add badge: false
  */
 export const Devs = /* #__PURE__*/ Object.freeze({
-    Nyako: {
-        name: "dukem2k7",
-        id: 1217418919837696022n
-    },
-    Nyako: {
+    ErrorOliver: {
         name: "ErrorOliver",
         id: 986653930232643584n
+    },
+    dukem2k7: {
+        name: "dukem2k7",
+        id: 1217418919837696022n
     },
 } satisfies Record<string, Dev>);
 
