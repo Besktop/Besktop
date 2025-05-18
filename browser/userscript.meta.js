@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name            Vencord
+// @name            Scorncord
 // @description     A Discord client mod - Web version
 // @version         %version%
-// @author          Vendicated (https://github.com/Vendicated)
-// @namespace       https://github.com/Vendicated/Vencord
-// @supportURL      https://github.com/Vendicated/Vencord
-// @icon            https://raw.githubusercontent.com/Vendicated/Vencord/refs/heads/main/browser/icon.png
+// @author          ErrorOliver (https://github.com/ErrorOliver2)
+// @namespace       https://github.com/Scorncord/Scorncord
+// @supportURL      https://github.com/Scorncord/Scorncord
+// @icon            https://raw.githubusercontent.com/Scorncord/Scorncord/refs/heads/main/browser/icon.png
 // @license         GPL-3.0
 // @match           *://*.discord.com/*
 // @grant           GM_xmlhttpRequest
