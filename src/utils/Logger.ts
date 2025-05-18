@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ export class Logger {
 
     private _log(level: "log" | "error" | "warn" | "info" | "debug", levelColor: string, args: any[], customFmt = "") {
         if (IS_REPORTER && IS_WEB && !IS_VESKTOP) {
-            console[level]("[Vencord]", this.name + ":", ...args);
+            console[level]("[Scorncord]", this.name + ":", ...args);
             return;
         }
 
