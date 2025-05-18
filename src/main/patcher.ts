@@ -158,7 +158,7 @@ if (!IS_VANILLA) {
     app.commandLine.appendSwitch("disable-background-timer-throttling");
     app.commandLine.appendSwitch("disable-backgrounding-occluded-windows");
 } else {
-    console.log("[Vencord] Running in vanilla mode. Not loading Vencord");
+    console.log("[Scorncord] Running in vanilla mode. Not loading Scorncord");
 }
 
 console.log("[Scorncord] Loading original Discord app.asar");
