@@ -1,6 +1,6 @@
 /*!
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -108,7 +108,7 @@ async function runUpdateCheck() {
             await update();
             if (Settings.autoUpdateNotification) {
                 notify({
-                    title: "Vencord has been updated!",
+                    title: "Scorncord has been updated!",
                     body: "Click here to restart",
                     onClick: relaunch
                 });
@@ -117,7 +117,7 @@ async function runUpdateCheck() {
         }
 
         notify({
-            title: "A Vencord update is available!",
+            title: "A Scorncord update is available!",
             body: "Click here to view the update",
             onClick: openUpdaterModal!
         });
@@ -144,7 +144,7 @@ async function init() {
                 "Webpack has finished initialising, but some patches haven't been applied yet.",
                 "This might be expected since some Modules are lazy loaded, but please verify",
                 "that all plugins are working as intended.",
-                "You are seeing this warning because this is a Development build of Vencord.",
+                "You are seeing this warning because this is a Development build of Scorncord.",
                 "\nThe following patches have not been applied:",
                 "\n\n" + pendingPatches.map(p => `${p.plugin}: ${p.find}`).join("\n")
             );
