@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,14 +17,14 @@
 */
 
 export const REACT_GLOBAL = "Vencord.Webpack.Common.React";
-export const VENBOT_USER_ID = "1017176847865352332";
-export const VENCORD_GUILD_ID = "1015060230222131221";
-export const DONOR_ROLE_ID = "1042507929485586532";
-export const CONTRIB_ROLE_ID = "1026534353167208489";
-export const REGULAR_ROLE_ID = "1026504932959977532";
-export const SUPPORT_CHANNEL_ID = "1026515880080842772";
-export const SUPPORT_CATEGORY_ID = "1108135649699180705";
-export const KNOWN_ISSUES_CHANNEL_ID = "1222936386626129920";
+export const VENBOT_USER_ID = "1373662666412785816";
+export const VENCORD_GUILD_ID = "1033058352986603660";
+export const DONOR_ROLE_ID = "1373665217300529284";
+export const CONTRIB_ROLE_ID = "1373665321738571786";
+export const REGULAR_ROLE_ID = "1373665415967805551";
+export const SUPPORT_CHANNEL_ID = "1373665558624600217";
+export const SUPPORT_CATEGORY_ID = "1373666097076899891";
+export const KNOWN_ISSUES_CHANNEL_ID = "1373666316656967752";
 
 export interface Dev {
     name: string;
