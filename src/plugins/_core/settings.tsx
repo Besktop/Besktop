@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and Megumin
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and Contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -86,41 +86,41 @@ export default definePlugin({
         return [
             {
                 section: SectionTypes.HEADER,
-                label: "Vencord",
+                label: "Scorncord",
                 className: "vc-settings-header"
             },
             {
-                section: "VencordSettings",
-                label: "Vencord",
+                section: "ScorncordSettings",
+                label: "Scorncord",
                 element: VencordTab,
                 className: "vc-settings"
             },
             {
-                section: "VencordPlugins",
+                section: "ScorncordPlugins",
                 label: "Plugins",
                 element: PluginsTab,
                 className: "vc-plugins"
             },
             {
-                section: "VencordThemes",
+                section: "ScorncordThemes",
                 label: "Themes",
                 element: ThemesTab,
                 className: "vc-themes"
             },
             !IS_UPDATER_DISABLED && {
-                section: "VencordUpdater",
+                section: "ScorncordUpdater",
                 label: "Updater",
                 element: UpdaterTab,
                 className: "vc-updater"
             },
             {
-                section: "VencordCloud",
+                section: "ScorncordCloud",
                 label: "Cloud",
                 element: CloudTab,
                 className: "vc-cloud"
             },
             {
-                section: "VencordSettingsSync",
+                section: "ScorncordSettingsSync",
                 label: "Backup & Restore",
                 element: BackupAndRestoreTab,
                 className: "vc-backup-restore"
@@ -194,7 +194,7 @@ export default definePlugin({
     options: {
         settingsLocation: {
             type: OptionType.SELECT,
-            description: "Where to put the Vencord settings section",
+            description: "Where to put the Scorncord settings section",
             options: [
                 { label: "At the very top", value: "top" },
                 { label: "Above the Nitro section", value: "aboveNitro", default: true },
@@ -232,7 +232,7 @@ export default definePlugin({
     getInfoRows() {
         const { electronVersion, chromiumVersion, additionalInfo } = this;
 
-        const rows = [`Vencord ${gitHash}${additionalInfo}`];
+        const rows = [`Scorncord ${gitHash}${additionalInfo}`];
 
         if (electronVersion) rows.push(`Electron ${electronVersion}`);
         if (chromiumVersion) rows.push(`Chromium ${chromiumVersion}`);
