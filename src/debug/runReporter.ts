@@ -1,6 +1,6 @@
 /*
- * Vencord, a Discord client mod
- * Copyright (c) 2024 Vendicated and contributors
+ * Scorncord, a Discord client mod
+ * Copyright (c) 2025 Scorncord and contributors
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -26,7 +26,7 @@ async function runReporter() {
                 match: /(?<="use strict";)/,
                 replace: "Vencord.Webpack._initReporter();"
             }
-        }, "Vencord Reporter");
+        }, "Scorncord Reporter");
 
         // @ts-ignore
         Vencord.Webpack._initReporter = function () {
@@ -116,6 +116,6 @@ async function runReporter() {
     }
 }
 
-// Run after the Vencord object has been created.
+// Run after the Scorncord object has been created.
 // We need to add extra properties to it, and it is only created after all of Vencord code has ran
 setTimeout(runReporter, 0);
