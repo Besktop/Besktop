@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@ import definePlugin from "@utils/types";
 export default definePlugin({
     name: "ServerListAPI",
     authors: [Devs.kemo],
-    description: "Api required for plugins that modify the server list",
+    description: "API required for plugins that modify the server list",
     patches: [
         {
             find: "#{intl::DISCODO_DISABLED}",
