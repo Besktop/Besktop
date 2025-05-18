@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,7 +31,7 @@ import { BUILD_TIMESTAMP, commonOpts, globPlugins, IS_DEV, IS_REPORTER, VERSION,
  */
 const commonOptions = {
     ...commonOpts,
-    entryPoints: ["browser/Vencord.ts"],
+    entryPoints: ["browser/Scorncord.ts"],
     format: "iife",
     globalName: "Vencord",
     external: ["~plugins", "~git-hash", "/assets/*"],
@@ -82,7 +82,7 @@ const buildConfigs = [
     {
         ...commonOptions,
         outfile: "dist/browser.js",
-        footer: { js: "//# sourceURL=file:///VencordWeb" }
+        footer: { js: "//# sourceURL=file:///ScorncordWeb" }
     },
     {
         ...commonOptions,
@@ -91,7 +91,7 @@ const buildConfigs = [
             ...commonOptions.define,
             IS_EXTENSION: "true"
         },
-        footer: { js: "//# sourceURL=file:///VencordWeb" }
+        footer: { js: "//# sourceURL=file:///ScorncordWeb" }
     },
     {
         ...commonOptions,
@@ -182,7 +182,7 @@ const appendCssRuntime = readFile("dist/Vencord.user.css", "utf-8").then(content
 ), { once: true });
 `;
 
-    return appendFile("dist/Vencord.user.js", cssRuntime);
+    return appendFile("dist/Scorncord.user.js", cssRuntime);
 });
 
 if (!process.argv.includes("--skip-extension")) {
