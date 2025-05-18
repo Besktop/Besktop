@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -77,7 +77,7 @@ export default definePlugin({
         // It has everything it needs preloaded, so, it doesn't include any chunk loading functionality.
         // Because of that, its WebpackInstance doesnt export wreq.m or wreq.c
 
-        // To circuvent this and disable Sentry we are gonna hook when wreq.g of its WebpackInstance is set.
+        // To circumvent this and disable Sentry we are gonna hook when wreq.g of its WebpackInstance is set.
         // When that happens we are gonna forcefully throw an error and abort everything.
         Object.defineProperty(Function.prototype, "g", {
             configurable: true,
