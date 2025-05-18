@@ -71,7 +71,7 @@ export async function installExt(id: string) {
 
         const buf = await get(url, {
             headers: {
-                "User-Agent": `Electron ${process.versions.electron} ~ Vencord (https://github.com/Scorncord/Scorncord)`
+                "User-Agent": `Electron ${process.versions.electron} ~ Scorncord (https://github.com/Scorncord/Scorncord)`
             }
         });
 
