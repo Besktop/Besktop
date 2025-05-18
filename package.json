@@ -1,7 +1,7 @@
 {
     "name": "scorncord",
     "private": "true",
-    "version": "v1.0.1-alpha2",
+    "version": "1.0.1-alpha3",
     "description": "The cutest Discord client mod",
     "homepage": "https://github.com/Scorncord/Scorncord/#readme",
     "bugs": {
