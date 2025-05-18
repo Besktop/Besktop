@@ -39,7 +39,7 @@ interface PluginData {
     hasCommands: boolean;
     required: boolean;
     enabledByDefault: boolean;
-    target: "discordDesktop" | "vesktop" | "desktop" | "web" | "dev";
+    target: "discordDesktop" | "vesktop" | "scorntop" | "desktop" | "web" | "dev";
     filePath: string;
 }
 
