@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2023 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ export function waitForComponent<T extends React.ComponentType<any> = React.Comp
     if (IS_REPORTER) lazyWebpackSearchHistory.push(["waitForComponent", Array.isArray(filter) ? filter : [filter]]);
 
     let myValue: T = function () {
-        throw new Error(`Vencord could not find the ${name} Component`);
+        throw new Error(`Scorncord could not find the ${name} Component`);
     } as any;
 
     const lazyComponent = LazyComponent(() => myValue) as LazyComponentWrapper<T>;
