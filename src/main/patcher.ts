@@ -1,6 +1,6 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
+ * Scorncord, a modification for Discord's desktop app
+ * Copyright (c) 2025 Scorncord and contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ import { initIpc } from "./ipcMain";
 import { RendererSettings } from "./settings";
 import { IS_VANILLA } from "./utils/constants";
 
-console.log("[Vencord] Starting up...");
+console.log("[Scorncord] Starting up...");
 
 // Our injector file at app/index.js
 const injectorPath = require.main!.filename;
@@ -161,5 +161,5 @@ if (!IS_VANILLA) {
     console.log("[Vencord] Running in vanilla mode. Not loading Vencord");
 }
 
-console.log("[Vencord] Loading original Discord app.asar");
+console.log("[Scorncord] Loading original Discord app.asar");
 require(require.main!.filename);
