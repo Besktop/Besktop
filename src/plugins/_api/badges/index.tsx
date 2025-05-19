@@ -166,7 +166,7 @@ export default definePlugin({
                                         }}
                                     >
                                         <Heart />
-                                        Vencord Donor
+                                        Scorncord Donor
                                     </Forms.FormTitle>
                                 </Flex>
                             </ModalHeader>
